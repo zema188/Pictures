@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<link rel="stylesheet" type="text/css" href="files/fonts/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<title>Pictures</title>
+</head>
+<body>	
+	<div class="wrapper">
+		<div class="header-w">
+    <div class ="header container">
+        <div class="header__content">
+            <a href="index.html" class="header__logo logo">
+                АРТ.ПОСТИНГ
+            </a>
+            <div class="header__nav nav">
+                <a href="about.html" class="nav__about">
+                    О компании
+                </a>
+                <div class="nav__action">
+                    <div class="nav__action-item nav__reg reg-btn">
+                        Регистрация
+                    </div>
+                    /
+                    <div class="nav__action-item nav__log log-btn">
+                        авторизация
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu">
+                <div class="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-m">
+    <div class="header-m__content">
+        <a href="about.html" class="header-m__item">
+            О компании
+        </a>
+        <div class="nav__action">
+            <div class="nav__action-item nav__reg reg-btn">
+                Регистрация
+            </div>
+            /
+            <div class="nav__action-item nav__log log-btn">
+                авторизация
+            </div>
+        </div>
+    </div>
+</div>
+<!-- authorization Popup -->
+<section class="authorization popup">
+    <div class="authorization__content">
+        <div class="authorization__title title">
+            Авторизация
+        </div>
+        <form class="authorization__form">
+            <div class="authorization__info">
+                <input class="authorization__mail authorization__info-item input_purple " placeholder="Эл. почта">
+                <div class="password-eye">
+                    <input class="authorization__password authorization__info-item input_purple" placeholder="Пароль" type="password">
+                    <div class="password-control">
+                        <img src="img/icons/eye-off.svg" alt="eye-off">
+                        <img src="img/icons/eye-show.svg" alt="eye-show">
+                    </div>
+                </div>
+            </div>
+            <button class="authorization__create-btn btn btn_purple">
+                Войти
+            </button>
+        </form>
+        <div class="authorization__footer">
+            <div class="authorization__reg">
+                Нет аккаунта?
+                <div class="authorization__reg-btn header__registration reg-btn">
+                    Регистрация
+                </div>
+            </div>
+        </div>
+        <div class="popup-close"></div>
+    </div>
+</section>
+<!-- Registration Popup -->
+<section class="registration popup ">
+    <div class="registration__content">
+        <div class="registration__title title">
+            Регистрация
+        </div>
+        <form class="registration__form">
+            <div class="registration__info">
+                <input class="registration__mail registration__info-item input_purple " placeholder="Эл. почта">
+                <div class="password-eye">
+                    <input class="registration__password registration__info-item input_purple" placeholder="Пароль" type="password">
+                    <div class="password-control">
+                        <img src="img/icons/eye-off.svg" alt="eye-off">
+                        <img src="img/icons/eye-show.svg" alt="eye-show">
+                    </div>
+                </div>
+                <div class="password-eye">
+                    <input class="registration__password-confirm registration__info-item input_purple" placeholder="Потвердить пароль" type="password">
+                    <div class="password-control">
+                        <img src="img/icons/eye-off.svg" alt="eye-off">
+                        <img src="img/icons/eye-show.svg" alt="eye-show">
+                    </div>
+                </div>
+            </div>
+            <button class="registration__create-btn btn btn_purple">
+                Создать аккаунт
+            </button>
+        </form>
+        <div class="registration__footer">
+            <div class="registration__login">
+                Есть аккаунт?
+                <div class="registration__login-btn header__authorization log-btn">
+                    Авторизация
+                </div>
+            </div>
+        </div>
+        <div class="popup-close"></div>
+    </div>
+</section>
+		<section class="create-w">
+			<div class="create container">
+				<div class="create__title_mob">
+					Создание поста
+				</div>
+				<div class="create__content">
+					<div class="create__info">
+						<div class="create__title">
+							Создание поста
+						</div>
+						<div class="create__info-item create-name">
+							<span>
+								Название
+							</span>
+							<input class="create-name__field">
+						</div>
+						<div class="create__info-item create-price">
+							<span>
+								Стоимость:
+							</span>
+							<input class="create-price__field">
+						</div>
+						<div class="create__info-item create-size">
+							<span>
+								Размер:
+							</span>
+							<input class="create-size__field">
+						</div>
+						<div class="create__info-item create-material">
+							<span>
+								Материал:
+							</span>
+							<input class="create-material__field">
+						</div>
+						<div class="create__info-item create-description">
+							<span>
+								Описание:
+							</span>
+							<textarea class="create-description__field"></textarea>
+						</div>
+						<div class="create__social">
+							<div class="create__social-title">
+								В каких соц. сетях размещать:
+							</div>
+							<div class="create__social-list">
+								<div class="create__social-item active">
+									<img src="img/icons/telegramm.svg" alt="telegramm">
+									<img src="img/icons/check_green.svg" alt="arrow">
+								</div>
+								<div class="create__social-item">
+									<img src="img/icons/vk.svg" alt="vk">
+									<img src="img/icons/check_green.svg" alt="arrow">
+								</div>
+								<div class="create__social-item">
+									<img class="inst" src="img/icons/inst.svg" alt="inst">
+									<img src="img/icons/check_green.svg" alt="arrow">
+								</div>
+								<div class="create__social-item">
+									<img src="img/icons/whatsapp.png" alt="whatsapp">
+									<img src="img/icons/check_green.svg" alt="arrow">
+								</div>
+								<div class="create__social-item">
+									<img src="img/icons/viber.svg" alt="viber">
+									<img src="img/icons/check_green.svg" alt="arrow">
+								</div>
+							</div>
+						</div>
+						<div class="create__publish btn btn_purple">
+							Опубликовать
+						</div>
+					</div>
+					<div class="create__slider">
+						<div class="create__swiper swiper">
+							<div class="create__wrapper swiper-wrapper">
+							  <div class="create__slide swiper-slide create__slide_bg">
+								<img class="create__slide-pic" src="img/pic/slide-preview.svg" alt="pic">
+							  </div>
+							  <div class="create__slide swiper-slide create__slide_bg">
+								<img class="create__slide-pic" src="img/pic/art_slide.png">
+							  </div>
+							  <div class="create__slide swiper-slide create__slide_bg">
+								<img class="create__slide-pic" src="img/pic/slide-preview.svg" alt="pic">
+							  </div>
+							</div>
+							<div class="create__pagination swiper__pagination swiper-pagination"></div>
+							<div class="create__prev swiper-prev">
+								<img src="img/icons/check_purple.svg" alt="arrow">
+							</div>
+							<div class="create__next swiper-next">
+								<img src="img/icons/check_purple.svg" alt="arrow">
+							</div>
+						</div>
+						<div class="create__slider-footer">
+							<label class="create__add btn btn_purple" for="add-photo">
+								Добавить фото
+							</label>
+							<input type="file" id="add-photo">
+							<label class="create__change btn btn_border" for="change-photo">
+								Изменить фото
+							</label>
+							<input type="file" id="change-photo">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="footer-w">
+    <footer class="footer container">
+        <div class="footer__content">
+            <a href="index.html" class="footer__logo logo">
+                АРТ.ПОСТИНГ
+            </a>
+            <div class="footer__nav nav">
+                <a href="about.html" class="nav__about">
+                    О компании
+                </a>
+                <div class="nav__action">
+                    <div class="nav__action-item nav__reg reg-btn">
+                        Регистрация
+                    </div>
+                    /
+                    <div class="nav__action-item nav__log log-btn">
+                        авторизация
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+</html>
