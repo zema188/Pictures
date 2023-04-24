@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<link rel="stylesheet" type="text/css" href="files/fonts/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<title>Pictures</title>
+</head>
+<body>	
+	<div class="wrapper">
+		@@include("./_header.html")
+		<section class="art container">
+			<div class="art__nav nav-pages">
+				<a href="#" class="nav-pages__item">
+					Главная
+				</a>
+				<a href="#" class="nav-pages__item">
+					Картины
+				</a>
+			</div>
+			<div class="art__nav-mob">
+				<div class="art__nav-mob-content">
+					<a href="#" class="art__nav-back">
+						<img src="img/icons/arrow-back.svg" alt="back">
+					</a>
+					<div class="art__nav-action">
+						<img class="art__nav-like" src="img/icons/heart.svg" alt="heart">
+						<img class="art__nav-basket" src="img/icons/basket.svg" alt="basket">
+					</div>
+				</div>
+			</div>
+			<div class="art__content">
+				<div class="art__swiper create__swiper swiper">
+					<div class="create__wrapper swiper-wrapper">
+					  <div class="create__slide swiper-slide">
+						<img src="img/pic/art_slide.png" alt="preview">
+					  </div>
+					  <div class="create__slide swiper-slide">
+						<img src="img/pic/art_slide.png" alt="preview">
+					  </div>
+					  <div class="create__slide swiper-slide">
+						<img src="img/pic/art_slide.png" alt="preview">
+					  </div>
+					</div>
+					<div class="create__pagination swiper__pagination swiper-pagination"></div>
+					<div class="create__prev swiper-prev">
+						<img src="img/icons/check_purple.svg" alt="arrow">
+					</div>
+					<div class="create__next swiper-next">
+						<img src="img/icons/check_purple.svg" alt="arrow">
+					</div>
+				</div>
+				<div class="art__text">
+					<div class="art__text-top">
+						<div class="art__subtitle">
+							КАРТИНА
+						</div>
+						<div class="art__name">
+							Собачки
+						</div>
+						<div class="art__size">
+							<span class="art-size">
+								1200x800,  
+							</span>
+							<span class="art-cloth">
+								холст,
+							</span>
+							<span class="art-paints">
+								масло
+							</span>
+						</div>
+						<div class="art__price">
+							15 000 р.
+						</div>
+						<div class="art__info">
+							Вечер на котором собираются опытные и начинающие програмисты и 3D дизайнеры для обсуждения проблем перед которыми они встречаются при своей работе
+						</div>
+						<div class="art__date">
+							12.12.2023
+						</div>
+					</div>
+					<div class="art__buy art__btn btn btn_purple">
+						Купить
+					</div>
+					<div class="art__action">
+						<div class="art__change">
+							Редактировать
+						</div>
+						/
+						<div class="art__delete">
+							удалить
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include("./_footer.html")
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<link rel="stylesheet" type="text/css" href="files/fonts/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<title>Pictures</title>
+</head>
+<body>	
+	<div class="wrapper">
+		@@include("./_header.html")
+		<section class="create-w">
+			<div class="create container">
+				<div class="create__title_mob">
+					Создание поста
+				</div>
+				<div class="create__content">
+					<div class="create__info">
+						<div class="create__title">
+							Создание поста
+						</div>
+						<div class="create__info-item create-name">
+							<span>
+								Название
+							</span>
+							<input class="create-name__field">
+						</div>
+						<div class="create__info-item create-price">
+							<span>
+								Стоимость:
+							</span>
+							<input class="create-price__field">
+						</div>
+						<div class="create__info-item create-size">
+							<span>
+								Размер:
+							</span>
+							<input class="create-size__field">
+						</div>
+						<div class="create__info-item create-material">
+							<span>
+								Материал:
+							</span>
+							<input class="create-material__field">
+						</div>
+						<div class="create__info-item create-description">
+							<span>
+								Описание:
+							</span>
+							<textarea class="create-description__field"></textarea>
+						</div>
+						<div class="create__social">
+							<div class="create__social-title">
+								В каких соц. сетях размещать:
+							</div>
+							<div class="create__social-list">
+								<div class="create__social-item active">
+									<img src="img/icons/telegramm.svg" alt="telegramm">
+									<img src="img/icons/check_green.svg" alt="arrow">
+								</div>
+								<div class="create__social-item">
+									<img src="img/icons/vk.svg" alt="vk">
+									<img src="img/icons/check_green.svg" alt="arrow">
+								</div>
+								<div class="create__social-item">
+									<img class="inst" src="img/icons/inst.svg" alt="inst">
+									<img src="img/icons/check_green.svg" alt="arrow">
+								</div>
+								<div class="create__social-item">
+									<img src="img/icons/whatsapp.png" alt="whatsapp">
+									<img src="img/icons/check_green.svg" alt="arrow">
+								</div>
+								<div class="create__social-item">
+									<img src="img/icons/viber.svg" alt="viber">
+									<img src="img/icons/check_green.svg" alt="arrow">
+								</div>
+							</div>
+						</div>
+						<div class="create__publish btn btn_purple">
+							Опубликовать
+						</div>
+					</div>
+					<div class="create__slider">
+						<div class="create__swiper swiper">
+							<div class="create__wrapper swiper-wrapper">
+							  <div class="create__slide swiper-slide create__slide_bg">
+								<img class="create__slide-pic" src="img/pic/slide-preview.svg" alt="pic">
+							  </div>
+							  <div class="create__slide swiper-slide create__slide_bg">
+								<img class="create__slide-pic" src="img/pic/art_slide.png">
+							  </div>
+							  <div class="create__slide swiper-slide create__slide_bg">
+								<img class="create__slide-pic" src="img/pic/slide-preview.svg" alt="pic">
+							  </div>
+							</div>
+							<div class="create__pagination swiper__pagination swiper-pagination"></div>
+							<div class="create__prev swiper-prev">
+								<img src="img/icons/check_purple.svg" alt="arrow">
+							</div>
+							<div class="create__next swiper-next">
+								<img src="img/icons/check_purple.svg" alt="arrow">
+							</div>
+						</div>
+						<div class="create__slider-footer">
+							<label class="create__add btn btn_purple" for="add-photo">
+								Добавить фото
+							</label>
+							<input type="file" id="add-photo">
+							<label class="create__change btn btn_border" for="change-photo">
+								Изменить фото
+							</label>
+							<input type="file" id="change-photo">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include("./_footer.html")
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+</html>

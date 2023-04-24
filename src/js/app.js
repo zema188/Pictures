@@ -13,10 +13,11 @@ function changerActive(list) {
 }
 // scroll document false
 
+//chech device
 function is_touch_device() {
     return ('ontouchstart' in window);
   }
-  
+
   function bodyFixed() { //scroll - false
     if(is_touch_device()) {
       document.body.classList.add('fixed')
@@ -44,7 +45,7 @@ function changerActive(list) {
     list = 0
 }
 
-//header
+//header sticky
 // window.onscroll = function() {headerFixed()};
 
 // let header = document.querySelector(".header-w");
@@ -70,7 +71,7 @@ function changerActive(list) {
 
 
 
-//Popup close 
+//Popup close if there was a click on another area
 document.addEventListener("click",
 function(event) {
   event = event || window.event;
@@ -78,7 +79,6 @@ function(event) {
   if(target.classList.contains('popup')) {
     target.classList.remove('active')
     bodyNotFixed()
-    // bodyNotFixed()
   }
   if(target.classList.contains('completed__slide')) {
     target.closest(".popup").classList.remove('active')
@@ -91,6 +91,7 @@ function(event) {
 }
 )
 
+// close popup if clicl exit btn
 let popupClose = document.querySelectorAll('.popup-close')
 for(let i=0 ; i < popupClose.length ; i++) {
     popupClose[i].addEventListener("click",
@@ -123,6 +124,7 @@ for(let i=0 ; i < nav_icon.length ; i++) {
 
 // Size-control
 window.addEventListener('resize', function(event){
+  //close mobile menu
     if(window.innerWidth > 767) {
       document.querySelector('.header__menu').classList.remove('active')
       document.querySelector('.header-m').classList.remove('active')
@@ -130,6 +132,7 @@ window.addEventListener('resize', function(event){
         nav_icon[i].classList.remove('open')
       }
     }
+  //close profile settings
     if(window.innerWidth > 539) {
       let profileSettings = document.querySelector('.profile__action-content')
       if(document.querySelector('.profile__action-content'))
@@ -165,7 +168,7 @@ if(document.querySelectorAll('.excerpts__swiper').length) {
   })
 }
 
-//excerpts swiper
+//create swiper
 if(document.querySelectorAll('.create__swiper').length) {
   const swiper_gallery= new Swiper('.create__swiper', {
     slidesPerView: 1,
