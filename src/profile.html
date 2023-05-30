@@ -10,7 +10,123 @@
 </head>
 <body>	
 	<div class="wrapper">
-		@@include("./_header.html")
+		<div class="header-w">
+    <div class ="header container">
+        <div class="header__content">
+            <a href="index.html" class="header__logo logo">
+                АРТ.ПОСТИНГ
+            </a>
+            <div class="header__nav nav">
+                <a href="about.html" class="nav__about">
+                    О компании
+                </a>
+                <div class="nav__action">
+                    <div class="nav__action-item nav__reg reg-btn">
+                        Регистрация
+                    </div>
+                    /
+                    <div class="nav__action-item nav__log log-btn">
+                        авторизация
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu">
+                <div class="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-m">
+    <div class="header-m__content">
+        <a href="about.html" class="header-m__item">
+            О компании
+        </a>
+        <div class="nav__action">
+            <div class="nav__action-item nav__reg reg-btn">
+                Регистрация
+            </div>
+            /
+            <div class="nav__action-item nav__log log-btn">
+                авторизация
+            </div>
+        </div>
+    </div>
+</div>
+<!-- authorization Popup -->
+<section class="authorization popup">
+    <div class="authorization__content">
+        <div class="authorization__title title">
+            Авторизация
+        </div>
+        <form class="authorization__form">
+            <div class="authorization__info">
+                <input class="authorization__mail authorization__info-item input_purple " placeholder="Эл. почта">
+                <div class="password-eye">
+                    <input class="authorization__password authorization__info-item input_purple" placeholder="Пароль" type="password">
+                    <div class="password-control">
+                        <img src="img/icons/eye-off.svg" alt="eye-off">
+                        <img src="img/icons/eye-show.svg" alt="eye-show">
+                    </div>
+                </div>
+            </div>
+            <button class="authorization__create-btn btn btn_purple">
+                Войти
+            </button>
+        </form>
+        <div class="authorization__footer">
+            <div class="authorization__reg">
+                Нет аккаунта?
+                <div class="authorization__reg-btn header__registration reg-btn">
+                    Регистрация
+                </div>
+            </div>
+        </div>
+        <div class="popup-close"></div>
+    </div>
+</section>
+<!-- Registration Popup -->
+<section class="registration popup ">
+    <div class="registration__content">
+        <div class="registration__title title">
+            Регистрация
+        </div>
+        <form class="registration__form">
+            <div class="registration__info">
+                <input class="registration__mail registration__info-item input_purple " placeholder="Эл. почта">
+                <div class="password-eye">
+                    <input class="registration__password registration__info-item input_purple" placeholder="Пароль" type="password">
+                    <div class="password-control">
+                        <img src="img/icons/eye-off.svg" alt="eye-off">
+                        <img src="img/icons/eye-show.svg" alt="eye-show">
+                    </div>
+                </div>
+                <div class="password-eye">
+                    <input class="registration__password-confirm registration__info-item input_purple" placeholder="Потвердить пароль" type="password">
+                    <div class="password-control">
+                        <img src="img/icons/eye-off.svg" alt="eye-off">
+                        <img src="img/icons/eye-show.svg" alt="eye-show">
+                    </div>
+                </div>
+            </div>
+            <button class="registration__create-btn btn btn_purple">
+                Создать аккаунт
+            </button>
+        </form>
+        <div class="registration__footer">
+            <div class="registration__login">
+                Есть аккаунт?
+                <div class="registration__login-btn header__authorization log-btn">
+                    Авторизация
+                </div>
+            </div>
+        </div>
+        <div class="popup-close"></div>
+    </div>
+</section>
 		<section class="profile-w">
 			<div class="profile container">
 				<div class="profile__content">
@@ -74,9 +190,6 @@
 										<div class="profile__range-circle"></div>
 										<div class="profile__range-line"></div>
 									</div>
-									<div class="profile__range-item">
-										<div class="profile__range-circle"></div>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -85,7 +198,7 @@
 								Информация
 							</div>
 							<div class="profile__action-bar">
-								<a href="#account-details" class="profile__action-bar-item active account-details-btn">
+								<a href="#account-details" class="profile__action-bar-item  account-details-btn active">
 									Данные аккаунта
 								</a>
 								<a href="#account-posts" class="profile__action-bar-item">
@@ -94,7 +207,7 @@
 								<a href="#account-settings" class="profile__action-bar-item">
 									Настройки
 								</a>
-								<a href="#account-social" class="profile__action-bar-item">
+								<a href="#account-social" class="profile__action-bar-item ">
 									Соц сети
 								</a>
 							</div>
@@ -113,7 +226,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="profile__action-item profile__action-info active" id="account-details">
+								<div class="profile__action-item profile__action-info profile__action-item_padding active" id="account-details">
 									<div class="profile__action-title_mob">
 										<div class="profile__action-back_mob">
 											<img src="img/icons/check_purple.svg" alt="back">
@@ -303,7 +416,7 @@
 										<textarea class="profile__field-regalia">Современные технологии достигли такого уровня, что высокое качество позиционных исследований прекрасно подходит для реализации соответствующих условий активизации. Есть над чем задуматься.</textarea>
 									</div>
 								</div>
-								<div class="profile__action-item" id="account-posts">
+								<div class="profile__action-item profile__action-item_padding" id="account-posts">
 									<div class="profile__action-title_mob">
 										<div class="profile__action-back_mob">
 											<img src="img/icons/check_purple.svg" alt="back">
@@ -312,334 +425,527 @@
 											</span>
 										</div>
 										<b>
-											Данные аккаунта
+											Посты
 										</b>
 									</div>
-									<div class="paintings__content">
-										<div class="paintings__list">
-											<div class="paintings__item">
-												<div class="paintings__item-top">
-													<div class="paintings__item-pic">
-														<img src="img/pic/art1.png" alt="art">
-													</div>
-													<div class="paintings__item-author paintings__item-lead">
-														<div class="paintings__item-avatar">
-															<img src="img/pic/avatar1.png" alt="avatar">
+									<div class="profile__action-posts">
+										<div class="paintings__content">
+											<div class="paintings__list">
+												<div class="paintings__item">
+													<div class="paintings__item-top">
+														<div class="paintings__item-pic">
+															<img src="img/pic/art1.png" alt="art">
 														</div>
-														<div class="paintings__item-full-name">
-															Светлана Зимина
+														<div class="paintings__item-name paintings__item-lead">
+															Лошадки	
 														</div>
 													</div>
-													<div class="paintings__item-name paintings__item-lead">
-														Лошадки	
+													<div class="paintings__item-info paintings__item-lead">
+														<div class="paintings__item-text">
+															<span class="paintings__item-size">
+																1200x800,  
+															</span>
+															<span class="paintings__item-cloth">
+																холст,
+															</span>
+															<span class="paintings__item-paints">
+																масло
+															</span>
+															<div class="paintings__item-price">
+																9 000 р.
+															</div>
+														</div>
+														<div class="paintings__item-decs-list">
+															<div class="paintings__item-decs paintings__item-days">
+																30 дней
+															</div>
+															<div class="paintings__item-decs paintings__item-views">
+																213
+															</div>
+															<div class="paintings__item-decs paintings__item-likes">
+																156
+															</div>
+														</div>
+														<div class="painigns__item-footer">
+															<a href="#" class="paintings__item-edit">
+																Редактировать
+															</a>
+															<div class="paintings__item-date">
+																12.12.2023
+															</div>
+														</div>
 													</div>
 												</div>
-												<div class="paintings__item-info paintings__item-lead">
-													<div class="paintings__item-text">
-														<span class="paintings__item-size">
-															1200x800,  
-														</span>
-														<span class="paintings__item-cloth">
-															холст,
-														</span>
-														<span class="paintings__item-paints">
-															масло
-														</span>
+												<div class="paintings__item">
+													<div class="paintings__item-top">
+														<div class="paintings__item-pic">
+															<img src="img/pic/art1.png" alt="art">
+														</div>
+														<div class="paintings__item-name paintings__item-lead">
+															Лошадки	
+														</div>
 													</div>
-													<div class="paintings__item-price">
-														9 000 р.
+													<div class="paintings__item-info paintings__item-lead">
+														<div class="paintings__item-text">
+															<span class="paintings__item-size">
+																1200x800,  
+															</span>
+															<span class="paintings__item-cloth">
+																холст,
+															</span>
+															<span class="paintings__item-paints">
+																масло
+															</span>
+															<div class="paintings__item-price">
+																9 000 р.
+															</div>
+														</div>
+														<div class="paintings__item-decs-list">
+															<div class="paintings__item-decs paintings__item-days">
+																30 дней
+															</div>
+															<div class="paintings__item-decs paintings__item-views">
+																213
+															</div>
+															<div class="paintings__item-decs paintings__item-likes">
+																156
+															</div>
+														</div>
+														<div class="painigns__item-footer">
+															<a href="#" class="paintings__item-edit">
+																Редактировать
+															</a>
+															<div class="paintings__item-date">
+																12.12.2023
+															</div>
+														</div>
 													</div>
-													<a href="#" class="paintings__item-btn paintings__item-more">
-														Подробнее
-													</a>
-													<div class="paintings__item-date">
-														12.12.2023
+												</div>
+												<div class="paintings__item">
+													<div class="paintings__item-top">
+														<div class="paintings__item-pic">
+															<img src="img/pic/art1.png" alt="art">
+														</div>
+														<div class="paintings__item-name paintings__item-lead">
+															Лошадки	
+														</div>
+													</div>
+													<div class="paintings__item-info paintings__item-lead">
+														<div class="paintings__item-text">
+															<span class="paintings__item-size">
+																1200x800,  
+															</span>
+															<span class="paintings__item-cloth">
+																холст,
+															</span>
+															<span class="paintings__item-paints">
+																масло
+															</span>
+															<div class="paintings__item-price">
+																9 000 р.
+															</div>
+														</div>
+														<div class="paintings__item-decs-list">
+															<div class="paintings__item-decs paintings__item-days">
+																30 дней
+															</div>
+															<div class="paintings__item-decs paintings__item-views">
+																213
+															</div>
+															<div class="paintings__item-decs paintings__item-likes">
+																156
+															</div>
+														</div>
+														<div class="painigns__item-footer">
+															<a href="#" class="paintings__item-edit">
+																Редактировать
+															</a>
+															<div class="paintings__item-date">
+																12.12.2023
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="paintings__item">
+													<div class="paintings__item-top">
+														<div class="paintings__item-pic">
+															<img src="img/pic/art1.png" alt="art">
+														</div>
+														<div class="paintings__item-name paintings__item-lead">
+															Лошадки	
+														</div>
+													</div>
+													<div class="paintings__item-info paintings__item-lead">
+														<div class="paintings__item-text">
+															<span class="paintings__item-size">
+																1200x800,  
+															</span>
+															<span class="paintings__item-cloth">
+																холст,
+															</span>
+															<span class="paintings__item-paints">
+																масло
+															</span>
+															<div class="paintings__item-price">
+																9 000 р.
+															</div>
+														</div>
+														<div class="paintings__item-decs-list">
+															<div class="paintings__item-decs paintings__item-days">
+																30 дней
+															</div>
+															<div class="paintings__item-decs paintings__item-views">
+																213
+															</div>
+															<div class="paintings__item-decs paintings__item-likes">
+																156
+															</div>
+														</div>
+														<div class="painigns__item-footer">
+															<a href="#" class="paintings__item-edit">
+																Редактировать
+															</a>
+															<div class="paintings__item-date">
+																12.12.2023
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="paintings__item">
+													<div class="paintings__item-top">
+														<div class="paintings__item-pic">
+															<img src="img/pic/art1.png" alt="art">
+														</div>
+														<div class="paintings__item-name paintings__item-lead">
+															Лошадки	
+														</div>
+													</div>
+													<div class="paintings__item-info paintings__item-lead">
+														<div class="paintings__item-text">
+															<span class="paintings__item-size">
+																1200x800,  
+															</span>
+															<span class="paintings__item-cloth">
+																холст,
+															</span>
+															<span class="paintings__item-paints">
+																масло
+															</span>
+															<div class="paintings__item-price">
+																9 000 р.
+															</div>
+														</div>
+														<div class="paintings__item-decs-list">
+															<div class="paintings__item-decs paintings__item-days">
+																30 дней
+															</div>
+															<div class="paintings__item-decs paintings__item-views">
+																213
+															</div>
+															<div class="paintings__item-decs paintings__item-likes">
+																156
+															</div>
+														</div>
+														<div class="painigns__item-footer">
+															<a href="#" class="paintings__item-edit">
+																Редактировать
+															</a>
+															<div class="paintings__item-date">
+																12.12.2023
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="paintings__item">
+													<div class="paintings__item-top">
+														<div class="paintings__item-pic">
+															<img src="img/pic/art1.png" alt="art">
+														</div>
+														<div class="paintings__item-name paintings__item-lead">
+															Лошадки	
+														</div>
+													</div>
+													<div class="paintings__item-info paintings__item-lead">
+														<div class="paintings__item-text">
+															<span class="paintings__item-size">
+																1200x800,  
+															</span>
+															<span class="paintings__item-cloth">
+																холст,
+															</span>
+															<span class="paintings__item-paints">
+																масло
+															</span>
+															<div class="paintings__item-price">
+																9 000 р.
+															</div>
+														</div>
+														<div class="paintings__item-decs-list">
+															<div class="paintings__item-decs paintings__item-days">
+																30 дней
+															</div>
+															<div class="paintings__item-decs paintings__item-views">
+																213
+															</div>
+															<div class="paintings__item-decs paintings__item-likes">
+																156
+															</div>
+														</div>
+														<div class="painigns__item-footer">
+															<a href="#" class="paintings__item-edit">
+																Редактировать
+															</a>
+															<div class="paintings__item-date">
+																12.12.2023
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="paintings__item">
+													<div class="paintings__item-top">
+														<div class="paintings__item-pic">
+															<img src="img/pic/art1.png" alt="art">
+														</div>
+														<div class="paintings__item-name paintings__item-lead">
+															Лошадки	
+														</div>
+													</div>
+													<div class="paintings__item-info paintings__item-lead">
+														<div class="paintings__item-text">
+															<span class="paintings__item-size">
+																1200x800,  
+															</span>
+															<span class="paintings__item-cloth">
+																холст,
+															</span>
+															<span class="paintings__item-paints">
+																масло
+															</span>
+															<div class="paintings__item-price">
+																9 000 р.
+															</div>
+														</div>
+														<div class="paintings__item-decs-list">
+															<div class="paintings__item-decs paintings__item-days">
+																30 дней
+															</div>
+															<div class="paintings__item-decs paintings__item-views">
+																213
+															</div>
+															<div class="paintings__item-decs paintings__item-likes">
+																156
+															</div>
+														</div>
+														<div class="painigns__item-footer">
+															<a href="#" class="paintings__item-edit">
+																Редактировать
+															</a>
+															<div class="paintings__item-date">
+																12.12.2023
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="paintings__item">
+													<div class="paintings__item-top">
+														<div class="paintings__item-pic">
+															<img src="img/pic/art1.png" alt="art">
+														</div>
+														<div class="paintings__item-name paintings__item-lead">
+															Лошадки	
+														</div>
+													</div>
+													<div class="paintings__item-info paintings__item-lead">
+														<div class="paintings__item-text">
+															<span class="paintings__item-size">
+																1200x800,  
+															</span>
+															<span class="paintings__item-cloth">
+																холст,
+															</span>
+															<span class="paintings__item-paints">
+																масло
+															</span>
+															<div class="paintings__item-price">
+																9 000 р.
+															</div>
+														</div>
+														<div class="paintings__item-decs-list">
+															<div class="paintings__item-decs paintings__item-days">
+																30 дней
+															</div>
+															<div class="paintings__item-decs paintings__item-views">
+																213
+															</div>
+															<div class="paintings__item-decs paintings__item-likes">
+																156
+															</div>
+														</div>
+														<div class="painigns__item-footer">
+															<a href="#" class="paintings__item-edit">
+																Редактировать
+															</a>
+															<div class="paintings__item-date">
+																12.12.2023
+															</div>
+														</div>
 													</div>
 												</div>
 											</div>
-											<div class="paintings__item">
-												<div class="paintings__item-top">
-													<div class="paintings__item-pic">
-														<img src="img/pic/art2.png" alt="art">
+											<div class="paintings__btn paintings__show btn btn_purple">
+												Показать еще
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="profile__action-item profile__action-item_padding" id="account-settings">
+									<div class="profile__action-title_mob">
+										<div class="profile__action-back_mob">
+											<img src="img/icons/check_purple.svg" alt="back">
+											<span>
+												Назад
+											</span>
+										</div>
+										<b>
+											Настройки
+										</b>
+									</div>
+									<div class="profile__settings">
+										<div class="profile__settings-content">
+											<div class="profile__settings-side profile__settings-side-pass">
+												<div class="profile__info-item password-eye">
+													<div class="profile__item-subtitle">
+														Пароль
 													</div>
-													<div class="paintings__item-author paintings__item-lead">
-														<div class="paintings__item-avatar">
-															<img src="img/pic/avatar2.png" alt="avatar">
-														</div>
-														<div class="paintings__item-full-name">
-															Евгений Шубин
-														</div>
-													</div>
-													<div class="paintings__item-name paintings__item-lead">
-														Цветочки
+													<input class="profile__item-field input_purple" type="password" value="1111111111">
+													<div class="password-control">
+														<img src="img/icons/eye-off.svg" alt="eye-off">
+														<img src="img/icons/eye-show.svg" alt="eye-show">
 													</div>
 												</div>
-												<div class="paintings__item-info paintings__item-lead">
-													<div class="paintings__item-text">
-														<span class="paintings__item-size">
-															1200x800,  
-														</span>
-														<span class="paintings__item-cloth">
-															холст,
-														</span>
-														<span class="paintings__item-paints">
-															масло
-														</span>
+												<div class="profile__info-item password-eye">
+													<div class="profile__item-subtitle">
+														Новый пароль
 													</div>
-													<div class="paintings__item-price">
-														10 000 р.
+													<input class="profile__item-field input_purple" type="password" value="1111111111">
+													<div class="password-control">
+														<img src="img/icons/eye-off.svg" alt="eye-off">
+														<img src="img/icons/eye-show.svg" alt="eye-show">
 													</div>
-													<a href="#" class="paintings__item-btn paintings__item-more">
-														Подробнее
-													</a>
-													<div class="paintings__item-date">
-														12.12.2023
+												</div>
+												<div class="profile__info-item password-eye">
+													<div class="profile__item-subtitle">
+														Подтвердите пароль
+													</div>
+													<input class="profile__item-field input_purple" type="password" value="1111111111">
+													<div class="password-control">
+														<img src="img/icons/eye-off.svg" alt="eye-off">
+														<img src="img/icons/eye-show.svg" alt="eye-show">
 													</div>
 												</div>
 											</div>
-											<div class="paintings__item">
-												<div class="paintings__item-top">
-													<div class="paintings__item-pic">
-														<img src="img/pic/art3.png" alt="art">
+											<div class="profile__settings-side profile__settings-side-info">
+												<div class="profile__info-item profile__info-email">
+													<div class="profile__item-subtitle">
+														Почта
 													</div>
-													<div class="paintings__item-author paintings__item-lead">
-														<div class="paintings__item-avatar">
-															<img src="img/pic/avatar3.png" alt="avatar">
-														</div>
-														<div class="paintings__item-full-name">
-															Валерия Суворова
-														</div>
-													</div>
-													<div class="paintings__item-name paintings__item-lead">
-														Собачки
-													</div>
+													<input class="profile__item-field-email profile__item-field" value="pochta@mail.ru">
 												</div>
-												<div class="paintings__item-info paintings__item-lead">
-													<div class="paintings__item-text">
-														<span class="paintings__item-size">
-															1200x800,  
-														</span>
-														<span class="paintings__item-cloth">
-															холст,
-														</span>
-														<span class="paintings__item-paints">
-															масло
-														</span>
+												<div class="profile__info-item profile__info-phone">
+													<div class="profile__item-subtitle profile__subtitle-phone">
+														Номер телефона
 													</div>
-													<div class="paintings__item-price">
-														9 000 р.
-													</div>
-													<a href="#" class="paintings__item-btn paintings__item-more">
-														Подробнее
-													</a>
-													<div class="paintings__item-date">
-														12.12.2023
-													</div>
-												</div>
-											</div>
-											<div class="paintings__item">
-												<div class="paintings__item-top">
-													<div class="paintings__item-pic">
-														<img src="img/pic/art4.png" alt="art">
-													</div>
-													<div class="paintings__item-author paintings__item-lead">
-														<div class="paintings__item-avatar">
-															<img src="img/pic/avatar4.png" alt="avatar">
+													<div class="profile__phone-list">
+														<div class="profile__item-field-phone profile__code profile__item-field profile__field-action">
+															<img class="profile__flag" src="img/icons/russia.png" alt="flag">
+															<input class="profile__input" value="+7">
+															<div class="profile__drop-codes profile__drop">
+																<div class="profile__drop-item profile__drop-item-codes">
+																	<img class="profile__drop-flag" src="img/icons/russia.png" alt="flag">
+																	<div class="profile__drop-text">+7</div>
+																</div>
+																<div class="profile__drop-item profile__drop-item-codes">
+																	<img class="profile__drop-flag" src="img/icons/romania.png" alt="flag">
+																	<div class="profile__drop-text">+242</div>
+																</div>
+															</div>
+															<img class="profile__field-arrow" src="img/icons/check_purple.svg" alt="arrow">
 														</div>
-														<div class="paintings__item-full-name">
-															Даниил Рыбин
-														</div>
-													</div>
-													<div class="paintings__item-name paintings__item-lead">
-														Арбузы
-													</div>
-												</div>
-												<div class="paintings__item-info paintings__item-lead">
-													<div class="paintings__item-text">
-														<span class="paintings__item-size">
-															1200x800,  
-														</span>
-														<span class="paintings__item-cloth">
-															холст,
-														</span>
-														<span class="paintings__item-paints">
-															масло
-														</span>
-													</div>
-													<div class="paintings__item-price">
-														9 000 р.
-													</div>
-													<a href="#" class="paintings__item-btn paintings__item-more">
-														Подробнее
-													</a>
-													<div class="paintings__item-date">
-														12.12.2023
-													</div>
-												</div>
-											</div>
-											<div class="paintings__item">
-												<div class="paintings__item-top">
-													<div class="paintings__item-pic">
-														<img src="img/pic/art5.png" alt="art">
-													</div>
-													<div class="paintings__item-author paintings__item-lead">
-														<div class="paintings__item-avatar">
-															<img src="img/pic/avatar5.png" alt="avatar">
-														</div>
-														<div class="paintings__item-full-name">
-															Мария Светлова
-														</div>
-													</div>
-													<div class="paintings__item-name paintings__item-lead">
-														Санкт-Петербург
-													</div>
-												</div>
-												<div class="paintings__item-info paintings__item-lead">
-													<div class="paintings__item-text">
-														<span class="paintings__item-size">
-															1200x800,  
-														</span>
-														<span class="paintings__item-cloth">
-															холст,
-														</span>
-														<span class="paintings__item-paints">
-															Санкт-Петербург
-														</span>
-													</div>
-													<div class="paintings__item-price">
-														8 000 р.
-													</div>
-													<a href="#" class="paintings__item-btn paintings__item-more">
-														Подробнее
-													</a>
-													<div class="paintings__item-date">
-														12.12.2023
-													</div>
-												</div>
-											</div>
-											<div class="paintings__item">
-												<div class="paintings__item-top">
-													<div class="paintings__item-pic">
-														<img src="img/pic/art6.png" alt="art">
-													</div>
-													<div class="paintings__item-author paintings__item-lead">
-														<div class="paintings__item-avatar">
-															<img src="img/pic/avatar6.png" alt="avatar">
-														</div>
-														<div class="paintings__item-full-name">
-															Захар Минин
-														</div>
-													</div>
-													<div class="paintings__item-name paintings__item-lead">
-														Пингвины
-													</div>
-												</div>
-												<div class="paintings__item-info paintings__item-lead">
-													<div class="paintings__item-text">
-														<span class="paintings__item-size">
-															1200x800,  
-														</span>
-														<span class="paintings__item-cloth">
-															холст,
-														</span>
-														<span class="paintings__item-paints">
-															масло
-														</span>
-													</div>
-													<div class="paintings__item-price">
-														22 000 р.
-													</div>
-													<a href="#" class="paintings__item-btn paintings__item-more">
-														Подробнее
-													</a>
-													<div class="paintings__item-date">
-														12.12.2023
-													</div>
-												</div>
-											</div>
-											<div class="paintings__item">
-												<div class="paintings__item-top">
-													<div class="paintings__item-pic">
-														<img src="img/pic/art7.png" alt="art">
-													</div>
-													<div class="paintings__item-author paintings__item-lead">
-														<div class="paintings__item-avatar">
-															<img src="img/pic/avatar7.png" alt="avatar">
-														</div>
-														<div class="paintings__item-full-name">
-															Николай Васильев
-														</div>
-													</div>
-													<div class="paintings__item-name paintings__item-lead">
-														Апельсины
-													</div>
-												</div>
-												<div class="paintings__item-info paintings__item-lead">
-													<div class="paintings__item-text">
-														<span class="paintings__item-size">
-															1200x800,  
-														</span>
-														<span class="paintings__item-cloth">
-															холст,
-														</span>
-														<span class="paintings__item-paints">
-															масло
-														</span>
-													</div>
-													<div class="paintings__item-price">
-														12 000 р.
-													</div>
-													<a href="#" class="paintings__item-btn paintings__item-more">
-														Подробнее
-													</a>
-													<div class="paintings__item-date">
-														12.12.2023
-													</div>
-												</div>
-											</div>
-											<div class="paintings__item">
-												<div class="paintings__item-top">
-													<div class="paintings__item-pic">
-														<img src="img/pic/art8.png" alt="art">
-													</div>
-													<div class="paintings__item-author paintings__item-lead">
-														<div class="paintings__item-avatar">
-															<img src="img/pic/avatar8.png" alt="avatar">
-														</div>
-														<div class="paintings__item-full-name">
-															Марина Дружинины
-														</div>
-													</div>
-													<div class="paintings__item-name paintings__item-lead">
-														Пейзаж
-													</div>
-												</div>
-												<div class="paintings__item-info paintings__item-lead">
-													<div class="paintings__item-text">
-														<span class="paintings__item-size">
-															1200x800,  
-														</span>
-														<span class="paintings__item-cloth">
-															холст,
-														</span>
-														<span class="paintings__item-paints">
-															масло
-														</span>
-													</div>
-													<div class="paintings__item-price">
-														17 000 р.
-													</div>
-													<a href="#" class="paintings__item-btn paintings__item-more">
-														Подробнее
-													</a>
-													<div class="paintings__item-date">
-														12.12.2023
+														<input class="profile__item-field-phone profile__phone profile__item-field" value="917-123-45-45">
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="paintings__btn paintings__show btn btn_purple">
-											Показать еще
+									</div>
+								</div>
+								<div class="profile__action-item " id="account-social">
+									<div class="profile__action-title_mob">
+										<div class="profile__action-back_mob">
+											<img src="img/icons/check_purple.svg" alt="back">
+											<span>
+												Назад
+											</span>
+										</div>
+										<b>
+											Соц сети
+										</b>
+									</div>
+									<div class="profile__social">
+										<div class="profile__social-list">
+											<div class="profile__social-item">
+												<div class="social-item__title social-item__title_telegram">
+													<img src="./img/icons/telegramm.svg">
+													Telergam
+												</div>
+												<div class="social-item__content">
+													<div class="profile__info-item">
+														<div class="profile__item-subtitle">
+															Ник telegram
+														</div>
+														<input class="profile__item-field-name profile__item-field" value="valeria_suvorova">
+													</div>
+													<div class="profile__info-item">
+														<div class="profile__item-subtitle">
+															Код индефикации
+														</div>
+														<input class="profile__item-field-name profile__item-field" value="43ghygTVhi734">
+													</div>
+													<div class="profile__info-item profile__info-item_full">
+														<div class="plus-cross"></div>
+														<div class="profile__item-subtitle">
+															Инструкция:
+														</div>
+														<textarea class="profile__field-description">Идейные соображения высшего порядка, а также экономическая повестка сегодняшнего дня требует определения и уточнения вывода текущих активов. Банальные, но неопровержимые выводы, а также тщательные исследования конкурентов будут ограничены исключительно образом мышления. Значимость этих проблем настолько очевидна, что современная методология разработки позволяет выполнить важные задания по разработке системы обучения кадров, соответствующей насущным потребностям.</textarea>
+													</div>
+												</div>
+											</div>
+											<div class="profile__social-item">
+												<div class="social-item__title social-item__title_telegram">
+													<img src="./img/icons/vk.svg">
+													ВКонтакте
+												</div>
+												<div class="social-item__content">
+													<div class="profile__info-item">
+														<div class="profile__item-subtitle">
+															Ник вконтакте
+														</div>
+														<input class="profile__item-field-name profile__item-field" value="valeria_suvorova">
+													</div>
+													<div class="profile__info-item">
+														<div class="profile__item-subtitle">
+															Код индефикации
+														</div>
+														<input class="profile__item-field-name profile__item-field" value="43ghygTVhi734">
+													</div>
+													<div class="profile__info-item profile__info-item_full">
+														<div class="plus-cross"></div>
+														<div class="profile__item-subtitle">
+															Инструкция:
+														</div>
+														<textarea class="profile__field-description">Идейные соображения высшего порядка, а также экономическая повестка сегодняшнего дня требует определения и уточнения вывода текущих активов. Банальные, но неопровержимые выводы, а также тщательные исследования конкурентов будут ограничены исключительно образом мышления. Значимость этих проблем настолько очевидна, что современная методология разработки позволяет выполнить важные задания по разработке системы обучения кадров, соответствующей насущным потребностям.</textarea>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -663,7 +969,29 @@
 				</div>
 			</div>
 		</section>
-		@@include("./_footer.html")
+		<div class="footer-w">
+    <footer class="footer container">
+        <div class="footer__content">
+            <a href="index.html" class="footer__logo logo">
+                АРТ.ПОСТИНГ
+            </a>
+            <div class="footer__nav nav">
+                <a href="about.html" class="nav__about">
+                    О компании
+                </a>
+                <div class="nav__action">
+                    <div class="nav__action-item nav__reg reg-btn">
+                        Регистрация
+                    </div>
+                    /
+                    <div class="nav__action-item nav__log log-btn">
+                        авторизация
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
