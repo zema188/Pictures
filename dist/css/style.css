@@ -2390,16 +2390,36 @@ body {
   padding-right: 15px;
 }
 
-.profile__lead:not(:last-child) {
-  margin-bottom: 5px;
+.profile__pic img {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
 }
 
-.profile__lead p {
+.profile__name {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  margin-top: 30px;
+}
+
+.profile__lead span {
   font-family: "Inter";
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: rgba(136, 136, 136, 0.8);
+}
+
+.profile__info-list {
+  margin-top: 10px;
+}
+
+.profile__verification-list {
+  margin-top: 10px;
 }
 
 .profile__verification-item {
@@ -2413,11 +2433,144 @@ body {
   display: flex;
   gap: 5px;
   align-items: center;
+  padding: 10px 20px 11px 34px;
+}
+
+.profile__verification-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.artist-profile__col-item {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.profile__desc:not(:last-child) {
+  margin-bottom: 22px;
+}
+
+.profile__desc span {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.profile__desc p {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.profile__col-list-desc {
+  padding: 30px 30px 40px 30px;
+}
+
+.profile__col-item .paintings__content {
+  padding-top: 0px;
+}
+
+.profile__paintings-title {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.profile__paintings .profile__col-item {
+  padding: 32px 20px;
+}
+
+.paintings__pagination {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin: 20px auto 0px;
+}
+
+.paintings__pagination-item {
+  background: #E8E8E8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 17px;
+  font-family: "HelveticaNeueCyr";
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 125%;
+  color: rgba(27, 27, 27, 0.85);
+  transition: 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+
+.paintings__pagination-item.active {
+  background: #DDDDDD;
+}
+
+.paintings__pagination-item::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 0.5px;
+  height: 7px;
+  background: #B9B9B9;
+}
+
+.paintings__pagination-item:first-child {
+  border-radius: 3px 0px 0px 3px;
+}
+
+.paintings__pagination-item:first-child::after {
+  display: none;
+}
+
+.paintings__pagination-item:last-child {
+  border-radius: 0px 3px 3px 0px;
+}
+
+.paintings__pagination-item:last-child::after {
+  display: none;
+}
+
+.paintings__pagination-arrow:first-child {
+  border-radius: 3px;
+}
+
+.paintings__pagination-arrow:last-child {
+  border-radius: 3px;
+  transform: rotate(180deg);
+}
+
+.paintings__pagination-arrow.active path {
+  stroke: #303030;
+}
+
+.paintings__pagination-arrow::after {
+  display: none;
+}
+
+.paintings__pagination-list {
+  display: flex;
+  border-radius: 3px;
 }
 
 @media (max-width: 1199px) {
   .about__content-lead {
     flex: 1 0 20%;
+  }
+
+  .profile__paintings .paintings__item {
+    flex: 0 0 calc(33.3333% - 12px);
   }
 }
 
@@ -2645,6 +2798,10 @@ body {
   .filter__title {
     margin-bottom: 37px;
   }
+
+  .profile__paintings .paintings__item {
+    flex: 0 0 calc(50% - 9px);
+  }
 }
 
 @media (max-width: 819px) {
@@ -2867,6 +3024,33 @@ body {
   .profile__social-item {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .artist-profile .profile__content {
+    flex-direction: column;
+  }
+
+  .artist-profile .profile {
+    padding-top: 110px;
+    padding-bottom: 20px;
+  }
+
+  .profile__pic {
+    margin-top: -100px;
+  }
+
+  .profile__pic img {
+    width: 25%;
+    max-width: 185px;
+  }
+
+  .profile__name {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .paintings__pagination {
+    width: fit-content;
   }
 }
 
@@ -3626,6 +3810,60 @@ body {
 
   .profile__info-item .password-control {
     right: 5px;
+  }
+
+  .artist-profile .profile {
+    padding-top: 60px;
+  }
+
+  .profile__pic {
+    margin-top: -80px;
+  }
+
+  .profile__name {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    color: #000;
+  }
+
+  .profile__lead span {
+    font-size: 10px;
+    line-height: 115%;
+  }
+
+  .profile__verification-item {
+    padding: 10px 20px 11px 14px;
+    font-size: 10px;
+  }
+
+  .profile__desc span {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 13px;
+    margin-bottom: 7px;
+  }
+
+  .profile__desc p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .profile__col-list-desc {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .profile__paintings-title {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+
+  .profile__paintings .profile__col-item {
+    padding: 20px;
+  }
+
+  .profile__paintings .paintings__item {
+    flex: 0 0 100%;
   }
 }
 
