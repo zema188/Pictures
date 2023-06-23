@@ -2390,6 +2390,194 @@ body {
   padding-right: 15px;
 }
 
+.chat {
+  display: flex;
+  padding: 0px 0px 20px 0px;
+}
+
+.chat__side {
+  flex: 0 0 250px;
+}
+
+.chat__side-subtitle {
+  font-size: 19px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  padding-left: 15px;
+  display: none;
+}
+
+.chat__side-list {
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+  padding-top: 10px;
+  height: 581px;
+  overflow: auto;
+}
+
+.chat__side-item {
+  display: flex;
+  gap: 12px;
+}
+
+.chat__side-item-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.chat__side-item-pic img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chat__side-item-name {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.chat__content {
+  flex-direction: column;
+  display: flex;
+  background: #f9f9f9;
+  display: none;
+}
+
+.chat__content.active {
+  display: block;
+}
+
+.chat__content .date {
+  text-align: center;
+}
+
+.chat__freind {
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+  border-bottom: 0.7px solid #969696;
+  position: relative;
+}
+
+.chat__freind svg {
+  width: 24px;
+  height: 24px;
+  left: 8px;
+  top: 50%;
+  transform: translate(0, -50%);
+  position: absolute;
+  display: none;
+}
+
+.chat__freind-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.chat__freind-pic img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chat__list {
+  flex: 1;
+  padding: 20px 10px;
+  height: 400px;
+  overflow: auto;
+  padding-right: 20px;
+}
+
+.chat__list-item {
+  border-radius: 20px;
+  padding: 10px 8px 18px 8px;
+  max-width: 70%;
+  background: #ede5e5;
+  font-size: 17px;
+  position: relative;
+  width: fit-content;
+}
+
+.chat__list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.chat__list-item span {
+  font-size: 14px;
+  position: absolute;
+  right: 11px;
+  bottom: 0;
+}
+
+.chat__list-item.me {
+  margin-right: 0;
+  margin-left: auto;
+  padding: 10px 8px 18px 8px;
+  background: #efdbdb;
+}
+
+.chat__field {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.chat__field input {
+  flex: 0 0 calc(100% - 52px);
+  background: #e9e6e6;
+  border-radius: 20px;
+  padding: 10px 60px 10px 10px;
+  margin-left: auto;
+  margin-right: 0;
+  display: block;
+}
+
+.chat__field-send {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  cursor: pointer;
+  transform: translate(0, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat__field-send svg {
+  width: 32px;
+  height: 32px;
+}
+
+.chat__field-attach {
+  width: 32px;
+  height: 32px;
+  margin-left: 9px;
+}
+
+.chat__field-attach input {
+  display: none;
+}
+
+.chat__field-attach svg {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+.chat__field-files {
+  margin-top: 20px;
+  padding-left: 15px;
+}
+
 .profile__pic img {
   width: 100%;
   max-width: 200px;
@@ -2562,6 +2750,129 @@ body {
 .paintings__pagination-list {
   display: flex;
   border-radius: 3px;
+}
+
+.news__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.news__list-item {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  position: relative;
+  padding-right: 57px;
+}
+
+.news__list-item.new .news__list-item-hashtag {
+  display: block;
+}
+
+.news__list-item-pic {
+  width: 300px;
+  height: 300px;
+}
+
+.news__list-item-pic img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.news__list-item-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.news__list-item-lead {
+  max-width: 350px;
+}
+
+.news__list-item-hashtag {
+  border-radius: 20px;
+  background: #22c527;
+  padding: 5px 10px;
+  height: fit-content;
+  position: absolute;
+  color: #fff;
+  font-size: 15px;
+  right: 0;
+  top: 0;
+  display: none;
+}
+
+.news__item-content {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.news__item-pic {
+  flex: 0 0 calc(50% - 10px);
+}
+
+.news__item-pic img {
+  width: 100%;
+}
+
+.news__item-text {
+  flex: 1;
+}
+
+.news__item-subtitle {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.popup-notification svg {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 19px;
+  top: 19px;
+}
+
+.popup-notification .popup__content {
+  background: #f7e4c7;
+}
+
+.popup__content {
+  padding: 63px 25px 25px 25px;
+}
+
+.popup__lead {
+  text-align: center;
+}
+
+.popup__lead a {
+  text-decoration: underline;
+}
+
+.nav__news {
+  position: relative;
+}
+
+.nav__news .new {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(247, 3, 3, 0.4509803922);
+  color: #fff;
+  top: -13px;
+  right: -9px;
+  font-size: 9px;
+  width: 17px;
+  height: 17px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 1199px) {
@@ -2801,6 +3112,10 @@ body {
 
   .profile__paintings .paintings__item {
     flex: 0 0 calc(50% - 9px);
+  }
+
+  .news__item-pic {
+    flex: 0 0 100%;
   }
 }
 
@@ -3051,6 +3366,60 @@ body {
 
   .paintings__pagination {
     width: fit-content;
+  }
+
+  .news__list-item {
+    flex-wrap: wrap;
+    padding-right: 0;
+  }
+
+  .news__list-item-pic {
+    width: 100%;
+    height: auto;
+  }
+
+  .news__list-item-lead {
+    max-width: none;
+  }
+
+  .news__list-item-hashtag {
+    right: 5px;
+    top: 5px;
+  }
+}
+
+@media (max-width: 676px) {
+  .chat__side {
+    display: none;
+    flex: 0 0 100%;
+  }
+
+  .chat__side.active {
+    display: block;
+  }
+
+  .chat__side-subtitle {
+    display: block;
+  }
+
+  .chat__side-item {
+    border-bottom: 0.6px solid #969696;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+
+  .chat__freind {
+    padding-left: 50px;
+    align-items: center;
+  }
+
+  .chat__freind svg {
+    display: block;
+  }
+
+  .container_tablet {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -3812,6 +4181,31 @@ body {
     right: 5px;
   }
 
+  .chat__content .date {
+    font-size: 11px;
+  }
+
+  .chat__freind-name {
+    font-size: 15px;
+  }
+
+  .chat__list-item {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .chat__list-item span {
+    font-size: 11px;
+  }
+
+  .chat__field input {
+    font-size: 15px;
+  }
+
+  .chat__field-files {
+    font-size: 14px;
+  }
+
   .artist-profile .profile {
     padding-top: 60px;
   }
@@ -3864,6 +4258,19 @@ body {
 
   .profile__paintings .paintings__item {
     flex: 0 0 100%;
+  }
+
+  .news__list-item-subtitle {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .news__list-item-lead p {
+    font-size: 14px;
+  }
+
+  .news__item-text {
+    font-size: 14px;
   }
 }
 
